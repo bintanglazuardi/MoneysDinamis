@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backgroundUtama"
+    tools:context=".FragmentKategoriPemasukan">
+
+    <!--<ListView
+        android:id="@+id/list_kategori_pemasukan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/klik_kategori_pemasukan">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icn_pendapatan"/>
+            <!--app:civ_border_color="@android:color/white"
+            app:civ_border_width="4dp"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/img_item_photo"
+                android:layout_toRightOf="@+id/img_item_photo"
+                android:layout_marginLeft="70dp"
+                android:hint="Nama Kategori"
+                android:text="Gaji"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icn_pemberian"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/img_item_photo"
+                android:layout_toRightOf="@+id/img_item_photo"
+                android:layout_marginLeft="70dp"
+                android:hint="Nama Kategori"
+                android:text="Pemberian"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icn_penjualan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/img_item_photo"
+                android:layout_toRightOf="@+id/img_item_photo"
+                android:layout_marginLeft="70dp"
+                android:hint="Nama Kategori"
+                android:text="Penjualan"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icn_penghargaan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/img_item_photo"
+                android:layout_toRightOf="@+id/img_item_photo"
+                android:layout_marginLeft="70dp"
+                android:hint="Nama Kategori"
+                android:text="Penghargaan"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_kategori_photo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icn_other" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/img_item_photo"
+                android:layout_toRightOf="@+id/img_item_photo"
+                android:layout_marginLeft="70dp"
+                android:hint="Nama Kategori"
+                android:text="Lainnya"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

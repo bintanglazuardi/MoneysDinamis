@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hasil_scan_nota"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundUtama"
+    tools:context=".ActivityHasilScan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_nama"
+            android:background="@drawable/bkg_text"
+            android:hint="Nama Transaksi"
+            android:inputType="text"
+            android:text=""
+            android:textSize="15sp"
+            android:gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_nominal"
+            android:background="@drawable/bkg_text"
+            android:hint="Nominal"
+            android:inputType="number"
+            android:text=""
+            android:textSize="15sp"
+            android:gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_tanggal"
+            android:background="@drawable/bkg_text"
+            android:hint="Tanggal Transaksi"
+            android:text=""
+            android:textSize="15sp"
+            android:gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="ShowDatePickerDialog"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/input_kategori"
+            android:background="@drawable/bkg_text"
+            android:text=""
+            android:hint="Pilih Kategori"
+            android:textSize="15sp"
+            android:gravity="left|top"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:entries="@array/labels_array"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/hapus"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tambah"
+                    android:src="@drawable/ic_delete"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:background="@drawable/bkg_btn" />
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/tambah"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_check"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bkg_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_nama2"
+            android:background="@drawable/bkg_text"
+            android:hint="Nama Transaksi"
+            android:inputType="text"
+            android:text=""
+            android:textSize="15sp"
+            android:gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_nominal2"
+            android:background="@drawable/bkg_text"
+            android:hint="Nominal"
+            android:inputType="number"
+            android:text=""
+            android:textSize="15sp"
+            android:gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_tanggal2"
+            android:background="@drawable/bkg_text"
+            android:hint="Tanggal Transaksi"
+            android:text=""
+            android:textSize="15sp"
+            android:gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="ShowDatePickerDialog"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/input_kategori2"
+            android:background="@drawable/bkg_text"
+            android:text=""
+            android:hint="Pilih Kategori"
+            android:textSize="15sp"
+            android:gravity="left|top"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:entries="@array/labels_array"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/hapus2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tambah2"
+                    android:src="@drawable/ic_delete"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:background="@drawable/bkg_btn" />
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/tambah2"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_check"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bkg_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

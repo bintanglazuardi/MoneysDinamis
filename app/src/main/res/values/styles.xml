@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/backgroundUtama</item>
+        <item name="colorPrimaryDark">@color/backgroundUtama</item>
+        <item name="colorAccent">@color/backgroundInput</item>
+    </style>
+
+    <style name="HeaderBar">
+        <item name="android:background">@color/backgroundUtama</item>
+    </style>
+
+</resources>

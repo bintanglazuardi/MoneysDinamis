@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:background="@drawable/bkg_list">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_transaksi_photo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            tools:src="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_item_photo"
+            android:layout_toRightOf="@+id/img_item_photo"
+            android:layout_marginLeft="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text=""
+                android:hint="Nama Transaksi"/>
+
+            <TextView
+                android:id="@+id/tv_item_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                tools:text=""
+                android:hint="Tanggal Transaksi"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_biaya"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:hint="Nominal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

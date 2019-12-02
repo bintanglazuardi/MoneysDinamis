@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backgroundUtama"
+    tools:context=".FragmentHalamanBudget">
+
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/HeaderBar"
+        app:theme="@style/ActionBarThemeOverlay"
+        app:popupTheme="@style/ActionBarPopupThemeOverlay"
+        android:elevation="4dp" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/tambah_transaksi"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/icons8_plus_48"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Pemasukan Bulanan "
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/NominalBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/backgroundInput"
+        android:text="Rp. 5000000"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:textSize="22dp"/>
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            app:rcBackgroundColor="@color/Pendidikan"
+            app:rcBackgroundPadding="2dp"
+            app:rcMax="100"
+            app:rcProgress="22"
+            app:rcProgressColor="@color/Transportasi"
+            app:rcRadius="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/ikon2"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/icn_belanja"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nama2"
+                    android:layout_toRightOf="@id/ikon2"
+                    android:textColor="@android:color/white"
+                    android:text="Belanja Bulanan" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nominal2"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:text="200 / 600" />
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/nama2"
+                    android:layout_toRightOf="@+id/ikon2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical"
+                    app:rcBackgroundColor="@color/Pendidikan"
+                    app:rcBackgroundPadding="2dp"
+                    app:rcMax="100"
+                    app:rcProgress="67"
+                    app:rcProgressColor="@android:color/white"
+                    app:rcRadius="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/ikon3"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/icn_food"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nama3"
+                    android:layout_toRightOf="@id/ikon3"
+                    android:textColor="@android:color/white"
+                    android:text="Budget Makan" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nominal3"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:text="550 / 1000" />
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/nama3"
+                    android:layout_toRightOf="@+id/ikon3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical"
+                    app:rcBackgroundColor="@color/Pendidikan"
+                    app:rcBackgroundPadding="2dp"
+                    app:rcMax="100"
+                    app:rcProgress="55"
+                    app:rcProgressColor="@android:color/white"
+                    app:rcRadius="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/ikon1"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/icn_tagihan_utilitas"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nama1"
+                    android:layout_toRightOf="@id/ikon1"
+                    android:textColor="@android:color/white"
+                    android:text="Bayar Tagihan" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nominal1"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:text="350 / 500" />
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/nama1"
+                    android:layout_toRightOf="@+id/ikon1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical"
+                    app:rcBackgroundColor="@color/Pendidikan"
+                    app:rcBackgroundPadding="2dp"
+                    app:rcMax="100"
+                    app:rcProgress="70"
+                    app:rcProgressColor="@android:color/white"
+                    app:rcRadius="5dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

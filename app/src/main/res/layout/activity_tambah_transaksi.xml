@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundUtama"
+    tools:context=".ActivityTambahTransaksi">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Transaksi"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_nama"
+        android:background="@drawable/bkg_text"
+        android:hint="Nama Transaksi"
+        android:inputType="text"
+        android:text=""
+        android:textSize="15sp"
+        android:gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_nominal"
+        android:background="@drawable/bkg_text"
+        android:hint="Nominal"
+        android:inputType="number"
+        android:text=""
+        android:textSize="15sp"
+        android:gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_tanggal"
+        android:background="@drawable/bkg_text"
+        android:hint="Tanggal Transaksi"
+        android:text=""
+        android:textSize="15sp"
+        android:gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="ShowDatePickerDialog"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/input_kategori"
+        android:background="@drawable/bkg_text"
+        android:text=""
+        android:hint="Pilih Kategori"
+        android:textSize="15sp"
+        android:gravity="left|top"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Malas ngetik manual ?"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/scanNota"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Scan Nota"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:background="@drawable/bkg_btn" />
+</LinearLayout>

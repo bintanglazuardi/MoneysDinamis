@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.1"
+    defaultConfig {
+        applicationId "com.kuliah.komsi.moneys_statis"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:+'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:+'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //circleImage
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+
+    //Bottom NavBar
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.aurelhubert:ahbottomnavigation:2.3.4'
+
+    //Recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+//image crop library
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+//image to text google library
+    implementation 'com.google.android.gms:play-services-vision:19.0.0'
+
+    //grafik
+    implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+
+    //tab layout
+    implementation 'com.google.android.material:material:1.1.0-alpha10'
+    //implementation 'com.firebaseui:firebase-ui:0.6.2'
+
+    //progree bar
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+}

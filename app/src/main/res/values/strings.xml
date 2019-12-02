@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Money\'s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="labels_array">
+        <item>Makanan &amp; Minuman</item>
+        <item>Transportasi</item>
+        <item>Belanja</item>
+        <item>Kesehatan</item>
+        <item>Pendidikan</item>
+        <item>Bisnis</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="bulan_array">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+
+    <string-array name="tahun_array">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+
+    <string-array name="nama_transaksi_array">
+        <item>Gaji Bulanan</item>
+        <item>Makan</item>
+        <item>Investasi</item>
+        <item>Bayar Listrik</item>
+        <item>Makan</item>
+        <item>Beli Buku</item>
+        <item>Beli Sepatu</item>
+        <item>Cek Kesehatan</item>
+        <item>Jual Helm</item>
+        <item>Makan</item>
+    </string-array>
+
+    <string-array name="ikon_transaksi_array">
+        <item>@drawable/icn_pendapatan</item>
+        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_bisnis</item>
+        <item>@drawable/icn_tagihan_utilitas</item>
+        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_pendidikan</item>
+        <item>@drawable/icn_belanja</item>
+        <item>@drawable/icn_kesehatan</item>
+        <item>@drawable/icn_penjualan</item>
+        <item>@drawable/icn_food</item>
+    </string-array>
+
+    <string-array name="nominal_transaksi_array">
+        <item>5.000.000</item>
+        <item>30.000</item>
+        <item>500.000</item>
+        <item>100.000</item>
+        <item>50.000</item>
+        <item>70.000</item>
+        <item>270.000</item>
+        <item>165.000</item>
+        <item>300.000</item>
+        <item>25.000</item>
+    </string-array>
+
+    <string-array name="tanggal_transaksi_array">
+        <item>1 Desember 2019</item>
+        <item>1 Desember 2019</item>
+        <item>1 Desember 2019</item>
+        <item>1 Desember 2019</item>
+        <item>2 Desember 2019</item>
+        <item>2 Desember 2019</item>
+        <item>2 Desember 2019</item>
+        <item>2 Desember 2019</item>
+        <item>2 Desember 2019</item>
+        <item>3 Desember 2019</item>
+    </string-array>
+
+    <string-array name="kategori_pemasukan_array">
+        <item>Gaji</item>
+        <item>Pemberian</item>
+        <item>Penjualan</item>
+        <item>Penghargaan</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="kategori_pengeluaran_array">
+        <item>Makanan &amp; Minuman</item>
+        <item>Tagihan &amp; Utilitas</item>
+        <item>Transportasi</item>
+        <item>Belanja</item>
+        <item>Pendidikan</item>
+        <item>Kesehatan</item>
+        <item>Bisnis</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="ikon_kategori_pemasukan_array">
+        <item>@drawable/icn_entertaint</item>
+        <item>@drawable/icn_entertaint</item>
+        <item>@drawable/icn_entertaint</item>
+        <item>@drawable/icn_entertaint</item>
+        <item>@drawable/icn_entertaint</item>
+    </string-array>
+
+    <string-array name="ikon_kategori_pengeluaran_array">
+        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_food</item>
+    </string-array>
+</resources>

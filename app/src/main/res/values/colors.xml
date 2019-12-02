@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backgroundUtama">#0A0B3C</color>
+    <color name="fontInput">#FFBC39</color>
+    <color name="backgroundInput">#FFAC0A</color>
+    <color name="backgroundInput2">#FF9723</color>
+    <color name="backgroundtransaksi">#FAAD3D</color>
+
+<!--    Pemasukann-->
+    <color name="Gaji">#F5BC36</color>
+    <color name="Pemberian">#A8F1A2</color>
+    <color name="Penjualan">#758FEA</color>
+    <color name="Penghargaan">#BA51BC</color>
+    <color name="Lainnya">#53317E</color>
+
+<!--    Pengeluaran-->
+    <color name="MakananMinuman">#649BEE</color>
+    <color name="TagihanUtilitas">#DA777D</color>
+    <color name="Transportasi">#04865F</color>
+    <color name="Belanja">#C92C64</color>
+    <color name="Pendidikan">#37A4C7</color>
+    <color name="Kesehatan">#B87716</color>
+    <color name="Bisnis">#2B48B1</color>
+    <color name="Lainnya2">#9F2BB1</color>
+
+<!--    Progressbar-->
+    <color name="progressBar">#4C8AFF</color>
+</resources>

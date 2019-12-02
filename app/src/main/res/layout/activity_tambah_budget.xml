@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundUtama"
+    tools:context=".ActivityTambahBudget">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pemasukan Bulanan"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. "
+                    android:textSize="25sp"
+                    android:textColor="@color/backgroundInput"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentLeft="true"/>
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total_budget"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:text="5000000"
+                    android:hint="Nominal"
+                    android:textSize="25sp"
+                    android:textColor="@color/backgroundInput"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <!--<ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    tools:src="@drawable/ic_edit"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="250dp" />-->
+            </RelativeLayout>
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                app:rcBackgroundColor="@color/Pendidikan"
+                app:rcBackgroundPadding="2dp"
+                app:rcMax="100"
+                app:rcProgress="45"
+                app:rcProgressColor="@color/Transportasi"
+                app:rcRadius="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Buat baru"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="8dp"
+                android:textSize="16sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_nama"
+                android:background="@drawable/bkg_text"
+                android:hint="Nama Budget"
+                android:inputType="number"
+                android:text=""
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_nominal"
+                android:background="@drawable/bkg_text"
+                android:hint="Nominal"
+                android:inputType="number"
+                android:text=""
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/input_kategori"
+                android:background="@drawable/bkg_text"
+                android:text=""
+                android:hint="Pilih Kategori"
+                android:textSize="15sp"
+                android:gravity="left|top"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:entries="@array/labels_array"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/tambah_budget"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Tambah"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:background="@drawable/bkg_btn" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar yang telah kamu buat"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="8dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/icn_belanja"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@+id/img_item_photo"
+                        android:layout_toRightOf="@+id/img_item_photo"
+                        android:layout_marginLeft="70dp"
+                        android:hint="Nama Kategori"
+                        android:text="Belanja Bulanan"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@+id/img_item_photo"
+                        android:layout_toRightOf="@+id/img_item_photo"
+                        android:layout_marginLeft="70dp"
+                        android:hint=""
+                        android:text="600.000"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/icn_food"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@+id/img_item_photo"
+                        android:layout_toRightOf="@+id/img_item_photo"
+                        android:layout_marginLeft="70dp"
+                        android:hint="Nama Kategori"
+                        android:text="Budget Makan"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@+id/img_item_photo"
+                        android:layout_toRightOf="@+id/img_item_photo"
+                        android:layout_marginLeft="70dp"
+                        android:hint=""
+                        android:text="1.000.000"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/icn_tagihan_utilitas"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@+id/img_item_photo"
+                        android:layout_toRightOf="@+id/img_item_photo"
+                        android:layout_marginLeft="70dp"
+                        android:hint="Nama Kategori"
+                        android:text="Bayar Tagihan"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@+id/img_item_photo"
+                        android:layout_toRightOf="@+id/img_item_photo"
+                        android:layout_marginLeft="70dp"
+                        android:hint=""
+                        android:text="500.000"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
