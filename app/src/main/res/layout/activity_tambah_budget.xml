@@ -88,7 +88,7 @@
                 android:id="@+id/input_nama"
                 android:background="@drawable/bkg_text"
                 android:hint="Nama Budget"
-                android:inputType="number"
+                android:inputType="text"
                 android:text=""
                 android:textSize="15sp"
                 android:gravity="left"
