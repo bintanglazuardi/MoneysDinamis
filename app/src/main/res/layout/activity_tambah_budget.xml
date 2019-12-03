@@ -69,7 +69,7 @@
                 app:rcBackgroundColor="@color/Pendidikan"
                 app:rcBackgroundPadding="2dp"
                 app:rcMax="100"
-                app:rcProgress="45"
+                app:rcProgress="22"
                 app:rcProgressColor="@color/Transportasi"
                 app:rcRadius="5dp"/>
 

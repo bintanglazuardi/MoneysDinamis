@@ -76,7 +76,7 @@
                 android:layout_height="55dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
-                android:src="@drawable/icn_penjualan"/>
+                android:src="@drawable/icn_penghargaan"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                 android:layout_toRightOf="@+id/img_item_photo"
                 android:layout_marginLeft="70dp"
                 android:hint="Nama Kategori"
-                android:text="Penjualan"
+                android:text="Penghargaan"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -100,7 +100,7 @@
                 android:layout_height="55dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
-                android:src="@drawable/icn_penghargaan"/>
+                android:src="@drawable/icn_penjualan"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                 android:layout_toRightOf="@+id/img_item_photo"
                 android:layout_marginLeft="70dp"
                 android:hint="Nama Kategori"
-                android:text="Penghargaan"
+                android:text="Penjualan"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />

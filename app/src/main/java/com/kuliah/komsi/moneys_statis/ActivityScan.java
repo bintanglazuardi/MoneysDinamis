@@ -60,8 +60,10 @@ public class ActivityScan extends AppCompatActivity {
         lihatHasil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ActivityScan.this, ActivityHasilScan.class);
-                startActivity(intent);
+                if (mPreviewIv != null){
+                    Intent intent = new Intent(ActivityScan.this, ActivityHasilScan.class);
+                    startActivity(intent);
+                }
             }
         });
         hasilScan = findViewById(R.id.hasil_scan);

@@ -54,4 +54,7 @@ dependencies {
 
     //progree bar
     implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+
+    //swipe layout
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
 }

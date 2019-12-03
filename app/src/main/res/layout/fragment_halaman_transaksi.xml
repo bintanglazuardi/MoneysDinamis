@@ -96,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pemasukan"
-                    android:textColor="@android:color/holo_green_light"
+                    android:textColor="@android:color/white"
                     android:textSize="15sp"/>
 
                 <TextView
@@ -105,7 +105,7 @@
                     android:layout_marginLeft="100dp"
                     android:layout_alignParentRight="true"
                     android:text="Rp 5.500.000"
-                    android:textColor="@android:color/holo_green_light"
+                    android:textColor="@android:color/white"
                     android:textStyle="bold"
                     android:textSize="15sp"/>
             </RelativeLayout>
@@ -120,7 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pengeluaran"
-                    android:textColor="@android:color/holo_red_light"
+                    android:textColor="@android:color/white"
                     android:textSize="15sp"/>
 
                 <TextView
@@ -129,7 +129,7 @@
                     android:layout_marginLeft="100dp"
                     android:layout_alignParentRight="true"
                     android:text="Rp 4.600.000"
-                    android:textColor="@android:color/holo_red_dark"
+                    android:textColor="@android:color/white"
                     android:textStyle="bold"
                     android:textSize="15sp"/>
             </RelativeLayout>

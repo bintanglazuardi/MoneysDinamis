@@ -20,13 +20,28 @@
             android:background="@drawable/bkg_text"
             android:hint="Nama Transaksi"
             android:inputType="text"
-            android:text=""
+            android:text="FRESTEA GRN MADU 500"
             android:textSize="15sp"
             android:gravity="left"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/input_kategori"
+            android:background="@drawable/bkg_text"
+            android:text="Belanja"
+            android:hint="Pilih Kategori"
+            android:textSize="15sp"
+            android:gravity="left|top"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:entries="@array/labels_array"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -35,7 +50,7 @@
             android:background="@drawable/bkg_text"
             android:hint="Nominal"
             android:inputType="number"
-            android:text=""
+            android:text="Rp 6500"
             android:textSize="15sp"
             android:gravity="left"
             android:layout_marginLeft="50dp"
@@ -49,29 +64,13 @@
             android:id="@+id/input_tanggal"
             android:background="@drawable/bkg_text"
             android:hint="Tanggal Transaksi"
-            android:text=""
+            android:text="3 Desember 2019"
             android:textSize="15sp"
             android:gravity="left"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:onClick="ShowDatePickerDialog"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/input_kategori"
-            android:background="@drawable/bkg_text"
-            android:text=""
-            android:hint="Pilih Kategori"
-            android:textSize="15sp"
-            android:gravity="left|top"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:entries="@array/labels_array"/>
+            android:layout_marginBottom="5dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -114,7 +113,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -122,14 +122,27 @@
             android:background="@drawable/bkg_text"
             android:hint="Nama Transaksi"
             android:inputType="text"
-            android:text=""
+            android:text="CIMORY YGRT BLBRY250"
             android:textSize="15sp"
             android:gravity="left"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"/>
-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/input_kategori2"
+            android:background="@drawable/bkg_text"
+            android:text="Belanja"
+            android:hint="Pilih Kategori"
+            android:textSize="15sp"
+            android:gravity="left|top"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:entries="@array/labels_array"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -137,7 +150,7 @@
             android:background="@drawable/bkg_text"
             android:hint="Nominal"
             android:inputType="number"
-            android:text=""
+            android:text="Rp 8500"
             android:textSize="15sp"
             android:gravity="left"
             android:layout_marginLeft="50dp"
@@ -151,29 +164,13 @@
             android:id="@+id/input_tanggal2"
             android:background="@drawable/bkg_text"
             android:hint="Tanggal Transaksi"
-            android:text=""
+            android:text="3 Desember 2019"
             android:textSize="15sp"
             android:gravity="left"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:onClick="ShowDatePickerDialog"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/input_kategori2"
-            android:background="@drawable/bkg_text"
-            android:text=""
-            android:hint="Pilih Kategori"
-            android:textSize="15sp"
-            android:gravity="left|top"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:entries="@array/labels_array"/>
+            android:layout_marginBottom="5dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -211,6 +208,5 @@
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
-
 
 </LinearLayout>
