@@ -1,4 +1,4 @@
-package com.kuliah.komsi.moneys_statis;
+package com.kuliah.komsi.moneys_dinamis;
 
 
 import android.app.DatePickerDialog;
@@ -8,21 +8,16 @@ import android.os.Bundle;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.DatePicker;
-import android.widget.TextView;
 
 import java.util.Calendar;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentDatePickerTambah extends DialogFragment implements
-    DatePickerDialog.OnDateSetListener{
+public class FragmentDatePickerEdit extends DialogFragment implements DatePickerDialog.OnDateSetListener {
 
-    public FragmentDatePickerTambah() {
+    public FragmentDatePickerEdit() {
         // Required empty public constructor
     }
 
@@ -37,8 +32,7 @@ public class FragmentDatePickerTambah extends DialogFragment implements
 
     @Override
     public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-        ActivityTambahTransaksi activity = (ActivityTambahTransaksi) getActivity();
+        ActivityEditTransaksi activity = (ActivityEditTransaksi) getActivity();
         activity.processDatePickerResult(year, month, day);
     }
-
 }

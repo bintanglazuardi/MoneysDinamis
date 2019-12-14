@@ -1,4 +1,4 @@
-package com.kuliah.komsi.moneys_statis;
+package com.kuliah.komsi.moneys_dinamis;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

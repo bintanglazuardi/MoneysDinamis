@@ -1,8 +1,6 @@
-package com.kuliah.komsi.moneys_statis;
+package com.kuliah.komsi.moneys_dinamis;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;

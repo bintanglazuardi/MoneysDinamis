@@ -1,4 +1,4 @@
-package com.kuliah.komsi.moneys_statis;
+package com.kuliah.komsi.moneys_dinamis;
 
 import androidx.appcompat.app.AppCompatActivity;
 

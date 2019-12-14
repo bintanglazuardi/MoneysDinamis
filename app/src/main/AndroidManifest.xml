@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kuliah.komsi.moneys_statis">
+    package="com.kuliah.komsi.moneys_dinamis">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -12,23 +12,23 @@
         android:roundIcon="@drawable/logo_moneys2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityHasilScan" android:parentActivityName=".ActivityScan"/>
-        <activity android:name=".ActivityPilihKategoriBudget" android:parentActivityName=".ActivityTambahBudget"/>
-        <activity android:name=".ActivityTambahBudget" android:parentActivityName=".ActivityTambahBudget"/>
-        <activity android:name=".ActivityEditTransaksi" android:parentActivityName=".MainActivity"/>
+        <activity android:name="com.kuliah.komsi.moneys_dinamis.ActivityHasilScan" android:parentActivityName="com.kuliah.komsi.moneys_dinamis.ActivityScan"/>
+        <activity android:name="com.kuliah.komsi.moneys_dinamis.ActivityPilihKategoriBudget" android:parentActivityName="com.kuliah.komsi.moneys_dinamis.ActivityTambahBudget"/>
+        <activity android:name="com.kuliah.komsi.moneys_dinamis.ActivityTambahBudget" android:parentActivityName="com.kuliah.komsi.moneys_dinamis.ActivityTambahBudget"/>
+        <activity android:name="com.kuliah.komsi.moneys_dinamis.ActivityEditTransaksi" android:parentActivityName="com.kuliah.komsi.moneys_dinamis.MainActivity"/>
         <activity
-            android:name=".ActivityPilihKategori"
-            android:parentActivityName=".ActivityTambahTransaksi" />
-        <activity android:name=".ActivityScan" android:parentActivityName=".ActivityTambahTransaksi"/>
-        <activity android:name=".ActivityTambahTransaksi" android:parentActivityName="com.kuliah.komsi.moneys_statis.FragmentHalamanTransaksi" />
-        <activity android:name=".ActivitySplash">
+            android:name="com.kuliah.komsi.moneys_dinamis.ActivityPilihKategori"
+            android:parentActivityName="com.kuliah.komsi.moneys_dinamis.ActivityTambahTransaksi" />
+        <activity android:name="com.kuliah.komsi.moneys_dinamis.ActivityScan" android:parentActivityName="com.kuliah.komsi.moneys_dinamis.ActivityTambahTransaksi"/>
+        <activity android:name="com.kuliah.komsi.moneys_dinamis.ActivityTambahTransaksi" android:parentActivityName="com.kuliah.komsi.moneys_dinamis.FragmentHalamanTransaksi" />
+        <activity android:name="com.kuliah.komsi.moneys_dinamis.ActivitySplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.kuliah.komsi.moneys_dinamis.MainActivity" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/AppTheme" />

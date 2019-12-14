@@ -1,4 +1,4 @@
-package com.kuliah.komsi.moneys_statis;
+package com.kuliah.komsi.moneys_dinamis;
 
 public class Transaksi {
     private int photo;

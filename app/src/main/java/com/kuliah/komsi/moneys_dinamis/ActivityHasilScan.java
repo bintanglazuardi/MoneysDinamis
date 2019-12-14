@@ -1,33 +1,42 @@
-package com.kuliah.komsi.moneys_statis;
+package com.kuliah.komsi.moneys_dinamis;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ActivityEditTransaksi extends AppCompatActivity {
+public class ActivityHasilScan extends AppCompatActivity {
+    private Button btnScan;
     private TextView inputTanggal;
     private EditText inputNama, inputNominal;
     private Button inputKategori;
-    private ImageButton hapus;
+    public static LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_transaksi);
-        ActivityEditTransaksi.this.setTitle("Edit Transaksi");
+        setContentView(R.layout.activity_hasil_scan);
+        ActivityHasilScan.this.setTitle("Tambah Transaksi");
 
+        /*linearLayout = findViewById(R.id.hasil_scan_nota);
+
+        btnScan = findViewById(R.id.scanNota);
+        btnScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent scanPage = new Intent(ActivityHasilScan.this, ActivityScan.class);
+                startActivity(scanPage);
+            }
+        });
         inputNama = findViewById(R.id.input_nama);
         inputNominal = findViewById(R.id.input_nominal);
         inputTanggal = findViewById(R.id.input_tanggal);
@@ -35,18 +44,10 @@ public class ActivityEditTransaksi extends AppCompatActivity {
         inputKategori.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pilihKategori = new Intent(ActivityEditTransaksi.this ,ActivityPilihKategori.class);
+                Intent pilihKategori = new Intent(ActivityHasilScan.this ,ActivityPilihKategori.class);
                 startActivity(pilihKategori);
             }
-        });
-        hapus = findViewById(R.id.hapusEdit);
-        hapus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(ActivityEditTransaksi.this, "Data dihapus", Toast.LENGTH_SHORT).show();
-                onBackPressed();
-            }
-        });
+        });*/
     }
 
     @Override
@@ -61,13 +62,14 @@ public class ActivityEditTransaksi extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()==R.id.save){
             Toast.makeText(this, "Data Disimpan", Toast.LENGTH_SHORT).show();
-            onBackPressed();
+            Intent intent = new Intent(ActivityHasilScan.this, MainActivity.class);
+            startActivity(intent);
         }
         return true;
     }
 
-    public void ShowDatePickerDialog(View v) {
-        DialogFragment newFragment = new FragmentDatePickerEdit();
+    /*public void ShowDatePickerDialog(View v) {
+        DialogFragment newFragment = new FragmentDatePickerTambah();
         newFragment.show(getSupportFragmentManager(), "Date Picker");
     }
 
@@ -99,12 +101,10 @@ public class ActivityEditTransaksi extends AppCompatActivity {
             month_string = "Desember";
         }
 
-        //month_string = Integer.toString(month+1);
         String day_string = Integer.toString(day);
         String year_string = Integer.toString(year);
 
         String dateMessage = (day_string + " " + month_string + " " + year_string);
-        //Toast.makeText(this, dateMessage, Toast.LENGTH_SHORT).show();
         inputTanggal.setText(dateMessage);
-    }
+    }*/
 }

@@ -1,6 +1,6 @@
-package com.kuliah.komsi.moneys_statis;
+package com.kuliah.komsi.moneys_dinamis;
 
-public class KategoriBudget {
+public class Kategori {
     private int photo;
     private String nama;
 
@@ -20,4 +20,3 @@ public class KategoriBudget {
         this.nama = nama;
     }
 }
-
