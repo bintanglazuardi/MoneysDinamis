@@ -10,7 +10,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -24,6 +27,8 @@ public class FragmentKategoriPengeluaran extends Fragment {
     private KategoriAdapter adapter;
     private ArrayList<Kategori> kategoris;
     private LinearLayout klikKategoriPengeluaran;
+    public static int RESULT_CODE = 110;
+    public static String EXTRA_SELECTED_VALUE = "extra_selected_value";
 
     public FragmentKategoriPengeluaran() {
         // Required empty public constructor
@@ -35,15 +40,15 @@ public class FragmentKategoriPengeluaran extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_kategori_pengeluaran, container, false);
 
-        klikKategoriPengeluaran = view.findViewById(R.id.klik_kategori_pengeluaran);
+        /*klikKategoriPengeluaran = view.findViewById(R.id.klik_kategori_pengeluaran);
         klikKategoriPengeluaran.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ActivityTambahTransaksi.class);
                 startActivity(intent);
             }
-        });
-        /*adapter = new KategoriAdapter(getActivity());
+        });*/
+        adapter = new KategoriAdapter(getActivity());
         ListView listView = view.findViewById(R.id.list_kategori_pengeluaran);
         listView.setAdapter(adapter);
         prepare();
@@ -52,8 +57,13 @@ public class FragmentKategoriPengeluaran extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(getActivity(), kategoris.get(i).getNama(),Toast.LENGTH_SHORT).show();
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra(EXTRA_SELECTED_VALUE, kategoris.get(i).getNama());
+                getActivity().setResult(RESULT_CODE, resultIntent);
+                getActivity().finish();
+                getActivity().onBackPressed();
             }
-        });*/
+        });
 
         return view;
     }
@@ -71,8 +81,8 @@ public class FragmentKategoriPengeluaran extends Fragment {
     }
 
     private void prepare(){
-        kategoriPengeluaranArray = getResources().getStringArray(R.array.kategori_pemasukan_array);
-        ikonKategoriPengeluaranArray = getResources().obtainTypedArray(R.array.ikon_kategori_pemasukan_array);
+        kategoriPengeluaranArray = getResources().getStringArray(R.array.kategori_pengeluaran_array);
+        ikonKategoriPengeluaranArray = getResources().obtainTypedArray(R.array.ikon_kategori_pengeluaran_array);
     }
 
 }

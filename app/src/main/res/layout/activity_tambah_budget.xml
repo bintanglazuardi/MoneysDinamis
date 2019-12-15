@@ -84,41 +84,42 @@
                 android:textSize="16sp"/>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:id="@+id/input_nama"
                 android:background="@drawable/bkg_text"
                 android:hint="Nama Budget"
                 android:inputType="text"
                 android:text=""
-                android:textSize="15sp"
-                android:gravity="left"
+                android:textSize="18sp"
+                android:gravity="center_vertical|center_horizontal"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"/>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:id="@+id/input_nominal"
                 android:background="@drawable/bkg_text"
                 android:hint="Nominal"
                 android:inputType="number"
                 android:text=""
-                android:textSize="15sp"
-                android:gravity="left"
+                android:textSize="18sp"
+                android:gravity="center_horizontal|center_vertical"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"/>
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="50dp"
                 android:id="@+id/input_kategori"
                 android:background="@drawable/bkg_text"
                 android:text=""
+                android:textStyle="normal"
                 android:hint="Pilih Kategori"
-                android:textSize="15sp"
-                android:gravity="left|top"
+                android:textSize="18sp"
+                android:gravity="center_vertical|center_horizontal"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="5dp"
@@ -135,7 +136,6 @@
                 android:textColor="@android:color/white"
                 android:textSize="10sp"
                 android:background="@drawable/bkg_btn" />
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -261,8 +261,18 @@
                         android:layout_alignParentRight="true"/>
                 </RelativeLayout>
             </LinearLayout>
+            <!--<ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_budget_tambah"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="10dp"/>-->
         </LinearLayout>
 
     </ScrollView>
+
+
 
 </LinearLayout>

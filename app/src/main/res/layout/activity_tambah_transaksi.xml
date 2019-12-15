@@ -19,14 +19,14 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/input_nama"
         android:background="@drawable/bkg_text"
         android:hint="Nama Transaksi"
         android:inputType="text"
         android:text=""
-        android:textSize="15sp"
-        android:gravity="left"
+        android:textSize="18sp"
+        android:gravity="center_horizontal|center_vertical"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="20dp"
@@ -34,14 +34,14 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/input_nominal"
         android:background="@drawable/bkg_text"
         android:hint="Nominal"
         android:inputType="number"
         android:text=""
-        android:textSize="15sp"
-        android:gravity="left"
+        android:textSize="18sp"
+        android:gravity="center_vertical|center_horizontal"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="5dp"
@@ -49,13 +49,13 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/input_tanggal"
         android:background="@drawable/bkg_text"
         android:hint="Tanggal Transaksi"
         android:text=""
-        android:textSize="15sp"
-        android:gravity="left"
+        android:textSize="18sp"
+        android:gravity="center_vertical|center_horizontal"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="5dp"
@@ -64,13 +64,13 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:id="@+id/input_kategori"
         android:background="@drawable/bkg_text"
         android:text=""
         android:hint="Pilih Kategori"
-        android:textSize="15sp"
-        android:gravity="left|top"
+        android:textSize="18sp"
+        android:gravity="center_horizontal|center_vertical"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="5dp"
@@ -80,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="30dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:gravity="center_horizontal"
-            android:layout_marginTop="40dp"/>
+            android:layout_marginTop="30dp"/>
 
         <Button
             android:layout_width="100dp"

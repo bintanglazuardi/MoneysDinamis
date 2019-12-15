@@ -46,8 +46,8 @@ public class ActivityTambahTransaksi extends AppCompatActivity {
         inputKategori.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pilihKategori = new Intent(ActivityTambahTransaksi.this ,ActivityPilihKategori.class);
-                startActivity(pilihKategori);
+                Intent intent = new Intent(ActivityTambahTransaksi.this, ActivityPilihKategori.class);
+                startActivityForResult(intent, REQUEST_CODE);
             }
         });
     }
@@ -93,6 +93,18 @@ public class ActivityTambahTransaksi extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == REQUEST_CODE){
+            if(resultCode == ActivityPilihKategoriBudget.RESULT_CODE){
+                String selectedValue = data.getStringExtra(ActivityPilihKategoriBudget.EXTRA_SELECTED_VALUE);
+                inputKategori.setText(selectedValue);
+            }
+        }
+    }
+
     public void ShowDatePickerDialog(View v) {
         DialogFragment newFragment = new FragmentDatePickerTambah();
         newFragment.show(getSupportFragmentManager(), "Date Picker");
@@ -135,16 +147,4 @@ public class ActivityTambahTransaksi extends AppCompatActivity {
         inputTanggal.setText(dateMessage);
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE){
-            if (requestCode == RESULT_OK){
-                String kategoriDipilih = data.getStringExtra(ActivityPilihKategori.EXTRA_KATEGORI);
-                inputKategori.setText(kategoriDipilih);
-            }
-
-        }
-
-    }
 }

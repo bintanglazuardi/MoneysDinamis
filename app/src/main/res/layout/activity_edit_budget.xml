@@ -14,7 +14,7 @@
         android:layout_height="50dp"
         android:id="@+id/input_nama"
         android:background="@drawable/bkg_text"
-        android:hint="Nama Transaksi"
+        android:hint="Nama Budget"
         android:inputType="text"
         android:text=""
         android:textSize="18sp"
@@ -38,21 +38,6 @@
         android:layout_marginRight="50dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/input_tanggal"
-        android:background="@drawable/bkg_text"
-        android:hint="Tanggal Transaksi"
-        android:text=""
-        android:textSize="18sp"
-        android:gravity="center_vertical|center_horizontal"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:onClick="ShowDatePickerDialog"/>
 
     <Button
         android:layout_width="match_parent"

@@ -1,6 +1,7 @@
 package com.kuliah.komsi.moneys_dinamis;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
@@ -21,6 +22,7 @@ public class ActivityEditTransaksi extends AppCompatActivity {
     private EditText inputNama, inputNominal;
     private Button inputKategori;
     private ImageButton hapus;
+    private int REQUEST_CODE = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +37,8 @@ public class ActivityEditTransaksi extends AppCompatActivity {
         inputKategori.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pilihKategori = new Intent(ActivityEditTransaksi.this ,ActivityPilihKategori.class);
-                startActivity(pilihKategori);
+                Intent intent = new Intent(ActivityEditTransaksi.this, ActivityPilihKategori.class);
+                startActivityForResult(intent, REQUEST_CODE);
             }
         });
         hapus = findViewById(R.id.hapusEdit);
@@ -64,6 +66,18 @@ public class ActivityEditTransaksi extends AppCompatActivity {
             onBackPressed();
         }
         return true;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == REQUEST_CODE){
+            if(resultCode == ActivityPilihKategoriBudget.RESULT_CODE){
+                String selectedValue = data.getStringExtra(ActivityPilihKategoriBudget.EXTRA_SELECTED_VALUE);
+                inputKategori.setText(selectedValue);
+            }
+        }
     }
 
     public void ShowDatePickerDialog(View v) {

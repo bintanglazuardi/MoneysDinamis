@@ -43,6 +43,32 @@
             android:src="@drawable/icons8_plus_48"/>
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/tanggal_transaksi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/icons8_calendar_48"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bulan_tahun"
+            android:layout_toEndOf="@+id/tanggal_transaksi"
+            android:text="Des 2019"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/income"
@@ -64,7 +90,7 @@
         android:layout_marginTop="5dp"
         android:textAlignment="center"
         android:textColor="@color/backgroundInput"
-        android:text="Rp. 5000000"
+        android:text="Rp. 5.000.000"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="8dp"
@@ -83,6 +109,15 @@
             app:rcProgressColor="@color/Transportasi"
             app:rcRadius="5dp"/>
 
+    <!--<ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_budget"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="10dp"/>-->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -90,11 +125,13 @@
         android:padding="8dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/budget1"
                 android:layout_margin="8dp">
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
@@ -197,8 +234,8 @@
                 <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
-                    android:layout_below="@+id/nama1"
-                    android:layout_toRightOf="@+id/ikon1"
+                    android:layout_below="@id/nama1"
+                    android:layout_toRightOf="@id/ikon1"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="center_vertical"
                     app:rcBackgroundColor="@color/Pendidikan"

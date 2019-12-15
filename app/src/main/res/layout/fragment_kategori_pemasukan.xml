@@ -8,11 +8,11 @@
     android:background="@color/backgroundUtama"
     tools:context=".FragmentKategoriPemasukan">
 
-    <!--<ListView
+    <ListView
         android:id="@+id/list_kategori_pemasukan"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>-->
-    <LinearLayout
+        android:layout_height="match_parent"/>
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -27,8 +27,8 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:src="@drawable/icn_pendapatan"/>
-            <!--app:civ_border_color="@android:color/white"
-            app:civ_border_width="4dp"-->
+            &lt;!&ndash;app:civ_border_color="@android:color/white"
+            app:civ_border_width="4dp"&ndash;&gt;
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -139,6 +139,6 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </RelativeLayout>
-    </LinearLayout>
+    </LinearLayout>-->
 
 </LinearLayout>

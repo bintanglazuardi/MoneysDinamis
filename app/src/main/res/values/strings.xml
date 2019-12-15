@@ -14,31 +14,6 @@
         <item>Lainnya</item>
     </string-array>
 
-    <string-array name="bulan_array">
-        <item>Januari</item>
-        <item>Februari</item>
-        <item>Maret</item>
-        <item>April</item>
-        <item>Mei</item>
-        <item>Juni</item>
-        <item>Juli</item>
-        <item>Agustus</item>
-        <item>September</item>
-        <item>Oktober</item>
-        <item>November</item>
-        <item>Desember</item>
-    </string-array>
-
-    <string-array name="tahun_array">
-        <item>2019</item>
-        <item>2020</item>
-        <item>2021</item>
-        <item>2022</item>
-        <item>2023</item>
-        <item>2024</item>
-        <item>2025</item>
-    </string-array>
-
     <string-array name="nama_transaksi_array">
         <item>Gaji Bulanan</item>
         <item>Makan</item>
@@ -91,6 +66,46 @@
         <item>3 Desember 2019</item>
     </string-array>
 
+    <string-array name="nama_budget_array">
+        <item>Budget makan</item>
+        <item>Bayar Tagihan</item>
+        <item>Biaya Pendidikan</item>
+        <item>Belanja Bulanan</item>
+        <item>Periksa Kesehatan</item>
+    </string-array>
+
+    <string-array name="ikon_budget_array">
+        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_tagihan_utilitas</item>
+        <item>@drawable/icn_pendidikan</item>
+        <item>@drawable/icn_belanja</item>
+        <item>@drawable/icn_kesehatan</item>
+    </string-array>
+
+    <string-array name="sisa_budget_array">
+        <item>550 / 1000</item>
+        <item>350 / 500</item>
+        <item>300 / 800</item>
+        <item>200 / 600</item>
+        <item>50 / 200</item>
+    </string-array>
+
+    <string-array name="nominal_budget_array">
+        <item>1.000.000</item>
+        <item>500.000</item>
+        <item>800.000</item>
+        <item>600.000</item>
+        <item>200.000</item>
+    </string-array>
+
+    <string-array name="progress_bar_array">
+        <item>app:rcProgress="55"</item>
+        <item>app:rcProgress="70"</item>
+        <item>app:rcProgress="38"</item>
+        <item>app:rcProgress="33"</item>
+        <item>app:rcProgress="25"</item>
+    </string-array>
+
     <string-array name="kategori_pemasukan_array">
         <item>Gaji</item>
         <item>Pemberian</item>
@@ -111,21 +126,21 @@
     </string-array>
 
     <string-array name="ikon_kategori_pemasukan_array">
-        <item>@drawable/icn_entertaint</item>
-        <item>@drawable/icn_entertaint</item>
-        <item>@drawable/icn_entertaint</item>
-        <item>@drawable/icn_entertaint</item>
-        <item>@drawable/icn_entertaint</item>
+        <item>@drawable/icn_pendapatan</item>
+        <item>@drawable/icn_pemberian</item>
+        <item>@drawable/icn_penjualan</item>
+        <item>@drawable/icn_penghargaan</item>
+        <item>@drawable/icn_other</item>
     </string-array>
 
     <string-array name="ikon_kategori_pengeluaran_array">
         <item>@drawable/icn_food</item>
-        <item>@drawable/icn_food</item>
-        <item>@drawable/icn_food</item>
-        <item>@drawable/icn_food</item>
-        <item>@drawable/icn_food</item>
-        <item>@drawable/icn_food</item>
-        <item>@drawable/icn_food</item>
-        <item>@drawable/icn_food</item>
+        <item>@drawable/icn_tagihan_utilitas</item>
+        <item>@drawable/icn_transportation</item>
+        <item>@drawable/icn_belanja</item>
+        <item>@drawable/icn_pendidikan</item>
+        <item>@drawable/icn_kesehatan</item>
+        <item>@drawable/icn_bisnis</item>
+        <item>@drawable/icn_lainnya</item>
     </string-array>
 </resources>
